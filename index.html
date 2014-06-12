@@ -1,0 +1,560 @@
+﻿<!DOCTYPE html> 
+<html>
+<head>
+<meta charset="utf-8">
+<title>GAMEPLANET</title>
+<link href="jquery.mobile-1.0.min.css" rel="stylesheet" type="text/css"/>
+<script src="jquery-1.6.4.min.js" type="text/javascript"></script>
+<script src="jquery.mobile-1.0.min.js" type="text/javascript"></script>
+<script language="javascript">
+var tel;
+var nombre;
+var x;
+var car;
+var cara;
+var carac;
+var caract;
+var carro;
+var ancho;
+var largo;
+var len;
+var may;
+var correo;
+var m=0;
+var k=0;
+var z=0;
+var ar;
+var mayo;
+var cer="cbtis184";
+var cero;
+var anch;
+var larg;
+var le;
+var ancho1;
+var largo1;
+var len1;
+var larguese;
+var larguese1;
+var caja;
+var caja1;
+var armando=0;
+var fore;
+
+function nrr(){
+	nombre=document.getElementById("textinput").value;
+	may=nombre.toUpperCase();
+	document.getElementById("textinput").value=may;
+	ancho=may.length;
+	for(x=0;x<=ancho-1;x++){
+		car=may.charAt(x);
+		if(((car>='A')&&(car<='Z'))||(car==' '))
+		{
+			}
+		else{
+			alert("Se encontro un caracter diferente a letras");           break;
+			}
+	
+	}
+	
+	
+}
+function corr(){
+correo=document.getElementById("textinput2").value;
+largo=correo.length;
+armando=correo.length;
+if(armando==0)
+{
+	
+}
+else{
+if(armando>0)
+{
+for(x=0;x<=largo-1;x++){
+cara=correo.charAt(x);
+
+
+
+
+if(x==0){
+	  if((cara>='0')&&(cara<='9')){
+			  alert("El primer caracter no tiene que ser un numero")
+			  }
+	  }
+	  
+		
+  
+	
+	}
+	for(x=0;x<=largo-1;x++){
+    carac=correo.charAt(x);
+	if(carac=='@'){
+		  m++;
+		  }
+		  
+		}
+
+		  
+	for(x=0;x<=largo-1;x++){
+    caract=correo.charAt(x);
+		if(caract=='.')
+		{
+			k++;
+			}
+		
+			
+		
+			
+			}
+			 if(m>1)
+	{
+		alert("Solo se permite una arroba");
+	
+		
+	}
+	else{
+		if(m==0){
+		alert("Se te a olvidado poner @");
+		}
+		
+		}
+		if(k==0){
+				alert("Se te a olvidado poner puntos");
+				
+				
+			}
+			m=0;
+k=0;
+	
+}
+}
+		
+
+			
+		
+	  
+  }
+  function telefono(){
+tel=document.getElementById("textinput3").value;
+len=tel.length;
+for(x=0;x<=len-1;x++)
+{
+	carro=tel.charAt(x);
+	if(((carro>=0)&&(carro<=9))||((carro==' ')||(carro=='-')))
+	{
+	
+
+
+}
+else
+{
+	z++;
+
+}
+}
+if(z>0)
+	{
+		alert("Se encontraron "+z+" caracteres invalidos");
+	}	
+	z=0;
+
+  }
+
+  function area(){
+  	ar=document.getElementById("textarea").value;
+  	mayo=ar.toUpperCase();
+  	document.getElementById("textarea").value=mayo;
+
+
+  }
+
+  function  enviar(){
+  	anch=document.getElementById("textinput").value;
+        larg=document.getElementById("textinput2").value;
+        le=document.getElementById("textinput3").value;
+        caja=document.getElementById("textinput4").value;
+	caja1=document.getElementById("textarea").value;
+
+	
+        ancho1=anch.length;
+        largo1=larg.length;
+         len1=le.length;
+          larguese=caja.length;
+           larguese1=caja1.length;
+		   fore=caja.length;
+
+  	cero=document.getElementById("textinput4").value;
+	if(fore==0)
+	{
+		alert("ingresa el codigo en el cuadro de texto de la derecha");
+	}
+	else{
+		if(fore>0){
+	
+  	if(cero==cer){
+  		if((((ancho1==0)||(largo1==0))||((len1==0)||(larguese==0)))||(larguese1==0)){
+  		alert("falta intro ducir algun dato");
+  	}
+else{
+	alert("mensaje enviado");
+
+	document.getElementById("textinput").value=' ';
+	document.getElementById("textinput2").value=' ';
+	document.getElementById("textinput3").value=' ';
+	document.getElementById("textinput4").value=' ';
+	document.getElementById("textarea").value=' ';
+
+}
+
+     
+
+  	}
+  	else{
+  		 alert("valor del cuadro de seguridad incorrecto desigual");
+
+  	}
+	}}
+  	
+
+
+  }
+	
+			
+
+</script>
+</head> 
+<body> 
+
+<div data-role="page" id="page">
+	<div data-role="header">
+		<h1>Gameplanet</h1>
+	</div>
+	<div data-role="content">	
+		<ul data-role="listview">
+			<li><a href="#page2">Inicio</a></li>
+            <li><a href="#page3">Servicios y productos</a></li>
+			<li><a href="#page4">Equipo</a></li>
+            <li><a href="#page5">Contactos</a></li>
+		</ul>
+        <center>
+    <img src="imagenes/ciudad.jpg" width="299" height="168"></center> </div>
+	<div data-role="footer">
+		<h4>Autor:Kevin Omar Merino Galindo</h4>
+	</div>
+</div>
+
+<div data-role="page" id="page2">
+	<div data-role="header">
+		<h1>¿Quienes somos?</h1>
+	</div>
+	<div data-role="content">	
+		<h3>PERFIL DE LA EMPRESA</h3>
+<h4>Quienes Somos</h4>
+GAME PLANET SA de CV es una empresa dedicada a llevar el entretenimiento más actual en videojuegos a nuestros clientes mediante la comercialización de los mismos en nuestras tiendas especializadas.
+GAME PLANET nace de una empresa con 10 años de experiencia en el ramo de los videojuegos. En la actualidad cuenta con más de 80 tiendas a lo largo de la república mexicana para poder estar cerca de sus clientes y continua creciendo.
+Busca brindar un excelente servicio a sus clientes mediante la especialización de sus  tiendas en videojuegos y manteniendo actualizado el contenido de las mismas.
+Cuenta con la presencia de las marcas como: Xbox 360®, Playstation 3®, PlayStation 2®, Nintendo Wii®, Nintendo DS ®, y PsP® entre muchas otras dentro de nuestrosproductos.
+* Es una empresa mexicana dedicada a la venta de consolas, video juegos y accesorios de los mismos, con el fin de satisfacer la demanda de un gran número de consumidores que día a día buscan nuevas innovaciones en máquinas y juegos, que les permitan vivir nuevas experiencias y adrenalina durante el juego.
+
+<br>
+<img src="imagenes/gameplanet2.png" width="100%" height="30%"><br>
+
+<h4>Misión</h4>
+Satisfacer las necesidades del mercado ofreciendo una gran variedadde productos, además estar en la vanguardia en cuanto a sus productos así como la capacitación de su equipo.<br>
+<img src="imagenes/gameplanet_f_20120109_123019.jpg" width="60%" height="30%"><br>
+<h4>Visión</h4>
+Seguir ganando mercado en el territorio nacional a partir de la apertura de nuevas sucursales.<br>
+<img src="imagenes/gameplanet_celebi.png" width="100%" height="30%">
+			<br>
+
+    </div>
+	<div data-role="footer">
+		<h4>Gameplanet</h4>
+	</div>
+</div>
+<div data-role="page" id="page3">
+	<div data-role="header">
+		<h1>Servicios y productos</h1>
+	</div>
+	<div data-role="content">	
+    <h2> Venta de videogames</h2>
+    Bienvenido al sitio oficial de Gameplanet!<br>
+    Compra tus videojuegos, consolas, accesorios<br>
+     y otros productos relacionados con el mundo de los videojuegos.<br>
+     <h3>El 8° Arte</h3>
+    <img src="imagenes/WASHINGTON_FINAL.jpg" width="80%" height="50%"><br>
+    Emociones unicas que solo nos las aportan 
+    los videojuegos al estar tomando el control 
+    pinceladas artisticas que te llevan de la mano
+    o tu a ellas.<br>
+    <h3>video reseñas</h3>
+    <img src="imagenes/sddefault.jpg" width="80%" height="50%">
+    <br>
+    Por que conformarte con jugarlos 
+    si no tambien valorarlos
+    <ul data-role="listview">
+			<li><a href="#page7">Reseña</a></li>
+            
+		</ul>
+
+    <h3>Top ranking</h3>
+    <img src="imagenes/Top-10-videojuegos.png" width="80%" height="50%">
+    
+<ul data-role="listview">
+			<li><a href="#page6">Top ranking</a></li>
+            
+		</ul>
+		<h3>Foros</h3>
+    <img src="imagenes/foros.jpg" width="80%" height="50%">
+    <br>
+    Por que lo que juegas se platica<br>
+
+
+    
+    
+    
+
+    </div>
+<div data-role="footer">
+    <h4>Gameplanet</h4>
+	</div>
+</div>
+<div data-role="page" id="page4">
+	<div data-role="header">
+		<h1>Equipo </h1>
+		
+
+
+	</div>
+	<div data-role="content">	<img src="imagenes/IMG_20140604_213907.jpg" width="80%" height="50%">	<br>
+		Nombre del programador:Kevin Omar Merino Galindo<br>
+		Edad:17 años<br>
+		Hincha: del Cruz Azul<br>
+                Ocupacion: estudiante en cbtis 184<br>
+		Ranchito: Casa Blanca<br>
+		Hobbies:tocar guitarra, jugar playstation 3, jugar  football<br>
+		Deportes que practica:<br> foot ball, bastquetball, volleyball, tennis, badminton, patinaje, pesca, karate, atletismo, lanzamiento de disco y lanzamiento de bala
+		 <br>
+         <img src="imagenes/holisssssss.jpg" width="80%" height="50%">
+			<br>
+		Nombre de la programadora:Angelica Cruz Beltran<br>
+		Edad:17 años<br>
+                Ocupacion: estudiante en cbtis 184
+
+		Ciudad: Izucar de Matamoros Pue Cruz verde<br>
+		hobbies: leer y escrirbir sin faltas ortograficas<br>
+		Deportes que practica:foot ball , bastquetball y volleyball
+                
+		<br>
+
+		
+		
+
+	</div>
+
+
+	</div>
+	<div data-role="footer">
+		<h4>Gameplanet</h4>
+	</div>
+</div>
+
+
+<div data-role="page" id="page5">
+	<div data-role="header">
+		<h1>Contacto</h1>
+	</div>
+	<div data-role="content">
+	<img src="imagenes/ga.png" width="80%" height="50%">	
+	<table width="0" border="0">
+  <tr>
+    <td>Nombre</td>
+    <td>
+     
+      <input type="text" name="textinput" id="textinput" value="" onBlur="nrr()" />
+    </td>
+  </tr>
+  <tr>
+    <td>Correo Electrónico</td>
+    <td>
+     
+      <input type="text" name="textinput2" id="textinput2" value="" onBlur="corr()" />
+    </td>
+  </tr>
+  <tr>
+    <td>Teléfono</td>
+    <td>
+      
+      <input type="text" name="textinput3" id="textinput3" value="" onBlur="telefono()" />
+    </td>
+  </tr>
+   <tr>
+    <td>Asunto</td>
+    <td>
+      
+     <textarea cols="40" rows="8" name="textarea" id="textarea" onBlur="area()"></textarea>
+    </td>
+  </tr>
+   <tr>
+    <td colspan="2">Favor de introducir el valor de la derecha</td>
+    
+  </tr>
+   <tr>
+    <td>
+      
+      <input type="text" name="textinput4" id="textinput4" value=""  />
+    </td>
+    <td>
+     
+      <input type="text" name="textinput5" id="textinput5" value="cbtis184" disabled="disabled"  />
+    </td>
+
+
+    
+  </tr>
+  <tr>
+  	<td colspan="2">
+  <button onclick="enviar()">Enviar</button>
+</td>
+  </tr>
+
+  
+
+</table>	
+	</div>
+	<div data-role="footer">
+		<h4>Gameplanet</h4>
+	</div>
+</div>
+<div data-role="page" id="page6">
+	<div data-role="header">
+		<h1>Top 11</h1>
+	</div>
+	<div data-role="content">	
+		<h2> Ranking de los 11 mejores videojuegos según yo</h2>
+		 <h4>NUM 11:</h4><h5> METAL GEAR SOLID 4 </h5>
+		 
+		 <img src="imagenes/metal-gear-solid-4.jpg" width="100%" height="50%">	<br>
+		 <h5>Sinopsis </h5>
+		 La historia se sitúa en el año 2014, cinco años después del Incidente Manhattan acontecimientos ocurridos en el capítulo de la Planta de Metal Gear Solid 2; y nueve años después de que FOXHOUND asaltara la isla de Shadow Moses, en donde Solid Snake fue inyectado con un retrovirus llamado FOXDIE. Solid Snake aparece considerablemente envejecido debido a su avanzada degeneración celular, establecido desde un principio en el proceso de clonación que lo creó, y ahora tiene solo seis meses de vida. Metal Gear Solid 4 retrata un mundo donde el dominio militar en tierras extranjeras es el objetivo para dominar la economía, llevando a mercenarios a pelear grandes batallas con fines financieros mediante las PMC.
+
+		 <h2> Ranking de los 11 mejores videojuegos según yo</h2>
+		 <h4>NUM 10 :</h4><h5> FINAL FANTASY CIRSIS CORE </h5>
+		 
+		 <img src="imagenes/final-fantasy-7-crisis-core-final-fantasy-vii-6973714-1024-768.jpg" width="100%" height="50%">	<br>
+		 <h5>Sinopsis </h5>
+		Nos narra la vida de Zack un soldado
+		 De segunda clase y la búsqueda de 
+		 convertirse en héroe pero para ello 
+		 tendrá que pelear contra Shinra
+		 y  horribles monstruos pero 
+		 también por el amor de su vida Aerish.
+
+
+		  <h2> Ranking de los 11 mejores videojuegos según yo</h2>
+		 <h4>NUM 9:</h4><h5> DEAD SPACE 2 </h5>
+		 
+		 <img src="imagenes/ds2enemies_pack.jpg" width="100%" height="50%">	<br>
+		 <h5>Sinopsis </h5>
+		Este juego comienza situado después
+		de la primer aventura del ingeniero 
+		con la mejor suerte del mundo 
+		situado sobre una nave espacial 
+		y atado sobre una cama de fuerza.
+
+
+		 <h2> Ranking de los 11 mejores videojuegos según yo</h2>
+		 <h4>NUM 8:</h4><h5> KIRBY</h5>
+		 
+		 <img src="imagenes/Kirby-Triple-Deluxe.JPG" width="100%" height="50%">	<br>
+		 <h5>Sinopsis </h5>
+		Este juego nos presenta al personaje 
+		más fuerte del mundo de los videojuegos
+		cuyo nombre es kirby el juego es género  
+		plataformero.
+
+
+		 <h2> Ranking de los 11 mejores videojuegos según yo</h2>
+		 <h4>NUM 7:</h4><h5> UNCHARTED 3</h5>
+		 
+		 <img src="imagenes/uncharted_03.jpg" width="100%" height="50%">	<br>
+		 <h5>Sinopsis </h5>
+		Tercera parte del aventurero más idiota y suertudo del mundo.
+		Ahora nos transporta hacia el pasado haciendo énfasis en 
+		el presente haciendo la aparición de Katherine Marlon.
+
+ <h2> Ranking de los 11 mejores videojuegos según yo</h2>
+		 <h4>NUM 6:</h4><h5> DEVIL MAY CRY 3</h5>
+		 
+		 <img src="imagenes/Devil-may-cry-3-dantes-awakening-20050214013734033_640w.JPG" width="100%" height="50%">	<br>
+		 <h5>Sinopsis </h5>
+		La historia sirve como pre-cuela del primer Devil May Cry,
+		 Dante es un joven arrogante y compulsivo, que se ve envuelto
+		  En una misión de derrotar a su hermano gemelo Vergil, que planea
+		   Abrir las puertas del infierno para obtener el poder de su padre Sparda.
+
+
+		   <h2> Ranking de los 11 mejores videojuegos según yo</h2>
+		 <h4>NUM 5 :</h4><h5> RESIDENT EVIL</h5>
+		 
+		 <img src="imagenes/Resident-Evil-4-Wii-Frikarte.JPG" width="100%" height="50%">	<br>
+		 <h5>sSinopsis </h5>
+		La historia sigue a Leon S. Kennedy, uno de los supervivientes del desastre de Raccoon City; este es enviado a una misión especial para rescatar a Ashley Graham, la hija del presidente de los Estados Unidos, que ha sido secuestrada por una extraña organización. Él viaja a una aldea rural situada en España con la finalidad de encontrar pistas sobre ella, pero su investigación se dificulta cuando una horda de aldeanos violentos lo ataquen sin razón alguna.
+
+
+      
+		   <h2> Ranking de los 10 mejores videojuegos según yo</h2>
+		 <h4>NUM 4:</h4><h5> UNCHARTED 2</h5>
+		 
+		 <img src="imagenes/uncharted2.jpg" width="100%" height="50%">	<br>
+		 <h5>Sinopsis </h5>
+		Uncharted 2: El Reino de los Ladrones, titulado originalmente Uncharted 2: Among Thieves ("Entre Ladrones"), es un videojuego de acción-aventura en tercera persona para PlayStation 3 desarrollado por Naughty Dog y publicado por Sony Computer Entertainment.5 Es la secuela del juego de 2007, de la misma saga, Uncharted: El Tesoro de Drake y la continuación prevista del mismo es Uncharted 3: La traición de Drake.
+
+
+         <h2> Ranking de los 11 mejores videojuegos según yo</h2>
+		 <h4>NUM 3:</h4><h5> HEAVY RAIN</h5>
+		 
+		 <img src="imagenes/heavyrain.jpg" width="100%" height="50%">	<br>
+		 <h5>Sinopsis </h5>
+		Que se puede decir de una de las aventuras gráficas más esperadas de los últimos tiempos. Mucho y mucho ya que el juego causo una gran revolución. PS3 nos brinda una gran exclusivo que seguramente quedara en un nuestra memoria por mucho tiempo. 
+
+		  <h2> Ranking de los 11 mejores videojuegos según yo</h2>
+		 <h4>NUM 2:</h4><h5> BATMAN ARKHAM ASYLUM</h5>
+		 
+		 <img src="imagenes/319689.jpg" width="100%" height="50%">	<br>
+		 <h5>Sinopsis </h5>
+		
+        La historia de Arkham Asylum se basa en la saga de Mythos, donde El Joker ha elaborado un plan para liberar a varios enemigos de Batman que se encuentran en el manicomio de Arkham. Batman investiga sobre el caso y descubre que lo que quiere el Joker es una toxina de super esteroides llamada «Títan» y usarla para crear un ejército de monstruos y enviarlas a Gotham City.
+        <h2> Ranking de los 11 mejores videojuegos según yo</h2>
+		 <h4>NUM 1:</h4><h5> CALL OF DUTY  4 MODERN WARFARE</h5>
+		 
+		 <img src="imagenes/call-of-duty-4-modern-warfare-20070501010209706.jpg" width="100%" height="50%">	<br>
+		 <h5>Sinopsis </h5>
+		
+       La historia toma lugar en el año 2011, donde un líder radical ha ejecutado al presidente Al-Fulani que preside un país sin nombre con localización en Oriente Medio, y un movimiento «ultranacionalista» da inicio a una guerra civil en Rusia.
+
+
+
+
+
+
+		
+
+
+		 </div>
+	<div data-role="footer">
+		<h4>Gameplanet</h4>
+	</div>
+</div>
+<div data-role="page" id="page7">
+	<div data-role="header">
+		<h1>Reseñas</h1>
+	</div>
+	<div data-role="content">	
+	<iframe width="80%" height="45%" src="https://www.youtube.com/embed/ZewQMMs6xpM?list=PLX88RJoaDSZUaxWBAhcfaHnfUZRTInot4" frameborder="0" allowfullscreen></iframe>
+    </div>
+	<div data-role="footer">
+		<h4>Gameplanet</h4>
+	</div>
+</div>
+</body>
+</html>
